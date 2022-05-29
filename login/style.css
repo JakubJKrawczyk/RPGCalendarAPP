@@ -1,6 +1,6 @@
  #container {
-     width: 1400px;
-     height: 700px;
+     width: 1440px;
+     height: 1024px;
      margin-left: auto;
      margin-right: auto;
      text-align: center;
@@ -30,7 +30,7 @@
      padding: 10px;
  }
  
- #horizontalLine {
+ #vertical-lain {
      background-color: #B8B8B8;
      width: 2px;
      height: 800px;
