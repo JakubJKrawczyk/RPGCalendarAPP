@@ -48,16 +48,25 @@
                 </div>
                 <button class="formButton-1" id="add-event">Add Event</button>
                 <div id="vertical-line-4"></div>
-                <button id="select-group">
-                    Select Group
-                        <div id="vertical-line-5"></div>
-                        <div id="down-arrow" class="downarrow"></div>
-                </button>
-                <div id="my-calendar">
+                <form action="/action_page.php">
+                    <select name="Select-Group" id="select-group">
+                        <option value="Calendar">General Calendar</option>
+                    <optgroup label="My Groups">
+                        <option value="select-group">Sample Group-1</option>
+                        <option value="select-group">Sample Group-2</option>
+                    </optgroup>
+                    <optgroup label="All Groups">
+                        <option value="select-group">Sample Group-3</option>
+                        <option value="select-group">Sample Group-4</option>
+                    </optgroup>
+                    </select>
+                </form>
+                <form id="my-calendar">
                     <h3>My Calendar</h3>
-                </div>
+                    <button id="calendar-arrow" class="calendararrow"></button>
+                </form>
                 <div id="form-calendar">
-                    <table id="boxes" border="1" cellspacing="5">
+                    <table id="boxes" border="1 " cellspacing="5">
                         <tr id="week-1" class="week">
                             <td id="Monday-1" class="day">
 

@@ -283,32 +283,6 @@
     cursor: pointer;
 }
 
-#vertical-line-5 {
-    position: absolute;
-    width: 35px;
-    height: 0px;
-    left: 160px;
-    top: 17px;
-    border: 1px solid silver;
-    transform: rotate(90deg);
-    cursor: pointer;
-}
-
-.downarrow {
-    position: absolute;
-    box-sizing: border-box;
-    left: 182px;
-    top: 3px;
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 30px solid black;
-    margin: 1px auto 0;
-    background: rgba(0, 0, 0, 0);
-    cursor: pointer;
-}
-
 #my-calendar {
     position: absolute;
     width: 160px;
