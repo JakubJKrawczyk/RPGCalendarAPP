@@ -1,14 +1,178 @@
-#container {
-    position: relative;
-    width: 1440px;
-    height: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: absolute;
-    margin-top: 200px;
+html{
+    margin:0 !important;
+}
+body{
+    margin:0 !important;
 }
 
+/* Header Section - Beggining */
+header{
+    width:100%;
+    min-width: 768px;
+    background: linear-gradient(269.77deg, #CB0000 -11.34%, #A400BF 109.1%);
+    height: 100px;
+    margin-top: 0 !important;
+}
+.header-gold-line{
+    clear:both;
+    width:100%;
+    height:2px;
+    background-color:#C3C702;
+    
+
+    
+}
+#header-top-gold-line{
+   
+    position: absolute;
+    top: 5px;
+    
+}
+#header-bottom-gold-line{
+   
+    position: absolute;
+    top: 91px;
+}
+
+.header-part{
+    height: 100px;
+   margin:0 !important;
+   
+}
+
+#header-part-1{
+    width:30%;
+    float:left;
+    
+}
+
+    #header-part-1 label{
+        color: white;
+        font-size:32px;
+        line-height: 100px;
+        margin-left:50px;
+        font-family:'Press Start 2P', cursive;
+    }
+
+#header-part-2{
+    width:40%;
+    float:left;
+    line-height: 100px;
+}
+    #header-part-2 ul{
+        list-style-type: none;
+        width:420px;
+        min-width: 420px;
+        height: 100px;
+        margin-left:auto;
+        margin-right:auto;
+        
+    }
+    #header-part-2 ul li {
+        
+        float:left;
+        margin-left:30px;
+        height: 50px;
+        line-height: 50px;
+        margin-top:25px;
+        margin-bottom:25px;
+    }
+    #header-part-2 ul li:nth-child(odd) {
+        user-select: none;
+        color: white;
+        cursor: pointer;
+        font-size: 22px;
+        font-family: 'Roboto', sans-serif;
+
+
+    }
+    #header-part-2 ul li hr{
+        height:48px;
+        margin-top:0px;
+    }
+
+
+
+#header-part-3{
+    width:30%;
+    float:left;
+    min-width: 220px;
+}
+    #header-part-3 #welcome-sign{
+        color: white;
+        height:100px;
+        width: 160px;
+        line-height: 100px;
+        float:right;
+        font-size:20px;
+        
+    }
+    #header-part-3 #welcome-sign a{
+        color: yellow;
+        text-decoration: none;
+        
+        
+    }
+    #header-part-3 #avatar{
+        float:right;
+    background-color: #A9A9A9;
+    border-radius:100%;
+    height: 50px;
+    width: 50px;
+        line-height: 100px;
+        margin-right: 20px;
+        margin-top: 25px;
+        
+    }
+
+
+
+
+@media (max-width:1450px){
+
+    #header-part-1 label{
+        color: white;
+        font-size:20px;
+        line-height: 100px;
+        margin-left:50px;
+    }
+
+
+}
+
+/* Header Section - END */
+
+/* Main Section - Beginning */
+
+/* Main Section - END */
+
+/* Footer Section - Beginning */
+
+footer{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(269.77deg, #CB0000 -11.34%, #A400BF 109.1%);
+    position:absolute;
+    bottom: 0;
+
+    line-height: 50px;
+    text-align: center;
+    color:white;
+}
+
+/* Footer Section - END */
+
+
+
+
+
+
+
+
+
+/* stare */ 
 #form-head {
+    margin-top:500px;
     position: absolute;
     width: 1440px;
     height: 100px;
@@ -24,7 +188,7 @@
     left: 0px;
     top: 10px;
     border: 1px solid #C3C702;
-    transform: rotate(179.96deg);
+   
 }
 
 #logo-logo {
@@ -50,7 +214,6 @@
     height: 40px;
     left: 860px;
     top: 40px;
-    font-family: 'K2D';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
