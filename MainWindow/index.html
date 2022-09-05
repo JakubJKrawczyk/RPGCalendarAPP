@@ -23,15 +23,15 @@
                 <h3>RPG Calendar</h3>
             </div>
             <div id="log-out">
-                <button class="logout">Log Out</button>
+                <div class="logout">Log Out</div>
             </div>
             <div id="vertical-line-1"></div>
             <div id="groups-groups">
-                <button class="groups">Groups</button>
+                <div class="groups">Groups</div>
             </div>
             <div id="vertical-line-2"></div>
             <div id="event-event">
-                <button class="myevent">My Events</button>
+                <div class="myevent">My Events</div>
             </div>
             <div id="vertical-line-3"></div>
             <div id="user-user">
@@ -42,13 +42,17 @@
             <div id="horizontal-line-2"></div>
             <div id="calendar">
                 <div id="date">
-                    <button id="left-arrow" class="leftarrow"></button>
+                    <ruby id="left-arrow" class="leftarrow">	
+                        &#129136;
+                    </ruby>
                     <h3 id="Month">Month & Year</h3>
-                    <button id="right-arrow" class="rightarrow"></button>
+                    <ruby id="right-arrow" class="rightarrow">
+                        &#129138;
+                    </ruby>
                 </div>
                 <button class="formButton-1" id="add-event">Add Event</button>
                 <div id="vertical-line-4"></div>
-                <form action="/action_page.php">
+                <form>
                     <select name="Select-Group" id="select-group">
                         <option value="Calendar">General Calendar</option>
                     <optgroup label="My Groups">
@@ -61,148 +65,612 @@
                     </optgroup>
                     </select>
                 </form>
-                <form id="my-calendar">
+                <div id="my-calendar">
                     <h3>My Calendar</h3>
-                    <button id="calendar-arrow" class="calendararrow"></button>
-                </form>
+                    <ruby id="calendar-arrow" class="calendararrow">
+                        &#129138;
+                    </ruby>
+                </div>
                 <div id="form-calendar">
-                    <table id="boxes" border="1 " cellspacing="5">
+                    <table id="boxes" border="1" cellspacing="5">
                         <tr id="week-1" class="week">
-                            <td id="Monday-1" class="day">
-
+                            <td id="Monday-1" class="Day">
+                                <div class="day">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                             <td id="Tuesday-1" class="day">
-
+                                <div class="day">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                             <td id="Wednesday-1" class="day">
-
+                                <div class="day">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                             <td id="Thursday-1" class="day">
-
+                                <div class="day">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                             <td id="Friday-1" class="day">
-
+                                <div class="day">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                             <td id="Saturday-1" class="day">
-
+                                <div class="day">
+                                    <h4>Saturday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                             <td id="Sunday-1" class="day">
-
+                                <div class="day">
+                                    <h4>Sunday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                         </tr>
                         <tr id="week-2">
-                            <td>
-
+                            <td id="Monday-2" class="Day">
+                                <div class="day">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Tuesday-2" class="day">
+                                <div class="day">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Wednesday-2" class="day">
+                                <div class="day">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Thursday-2" class="day">
+                                <div class="day">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Friday-2" class="day">
+                                <div class="day">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Saturday-2" class="day">
+                                <div class="day">
+                                    <h4>Saturday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Sunday-2" class="day">
+                                <div class="day">
+                                    <h4>Sunday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                         </tr>
                         <tr id="week-3">
-                            <td>
-
+                            <td id="Monday-3" class="Day">
+                                <div class="day">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Tuesday-3" class="day">
+                                <div class="day">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Wednesday-3" class="day">
+                                <div class="day">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Thursday-3" class="day">
+                                <div class="day">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Friday-3" class="day">
+                                <div class="day">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Saturday-3" class="day">
+                                <div class="day">
+                                    <h4>Saturday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Sunday-3" class="day">
+                                <div class="day">
+                                    <h4>Sunday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                         </tr>
                         <tr id="week-4">
-                            <td>
-
+                            <td id="Monday-4" class="Day">
+                                <div class="day">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Tuesday-4" class="day">
+                                <div class="day">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Wednesday-4" class="day">
+                                <div class="day">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Thursday-4" class="day">
+                                <div class="day">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Friday-4" class="day">
+                                <div class="day">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Saturday-4" class="day">
+                                <div class="day">
+                                    <h4>Saturday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Sunday-4" class="day">
+                                <div class="day">
+                                    <h4>Sunday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                         </tr>
                         <tr id="week-5">
-                            <td>
-
+                            <td id="Monday-5" class="Day">
+                                <div class="day">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Tuesday-5" class="day">
+                                <div class="day">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Wednesday-5" class="day">
+                                <div class="day">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Thursday-5" class="day">
+                                <div class="day">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Friday-5" class="day">
+                                <div class="day">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Saturday-5" class="day">
+                                <div class="day">
+                                    <h4>Saturday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Sunday-5" class="day">
+                                <div class="day">
+                                    <h4>Sunday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                         </tr>
                         <tr id="week-6">
-                            <td>
-
+                            <td id="Monday-6" class="Day">
+                                <div class="day">
+                                    <h4>Monday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Tuesday-6" class="day">
+                                <div class="day">
+                                    <h4>Tuesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Wednesday-6" class="day">
+                                <div class="day">
+                                    <h4>Wednesday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Thursday-6" class="day">
+                                <div class="day">
+                                    <h4>Thursday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Friday-6" class="day">
+                                <div class="day">
+                                    <h4>Friday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Saturday-6" class="day">
+                                <div class="day">
+                                    <h4>Saturday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
-                            <td>
-
+                            <td id="Sunday-6" class="day">
+                                <div class="day">
+                                    <h4>Sunday</h4>
+                                </div>
+                                <div class="users">
+                                    <h4>Present:0 Absent:0</h4>
+                                </div>
+                                <div class="event">
+                                    <h4>Event</h4>
+                                </div>
+                                <div class="event-data">
+                                    <h4>Event Data</h4>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -211,7 +679,7 @@
 
             <div id="footer">
                 <div id="autors">
-                    <h3>"Group planner " / Autors: Jakub Krawczyk & Grzegorz Kramarz | 2022 &copy: All rights reserved!</h3>
+                    <h3>"Group planner" / Autors: Jakub Krawczyk & Grzegorz Kramarz | 2022 &copy: All rights reserved!</h3>
                 </div>
             </div>
         </div>

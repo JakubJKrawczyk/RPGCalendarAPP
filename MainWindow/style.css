@@ -49,7 +49,7 @@
     width: 100px;
     height: 40px;
     left: 860px;
-    top: 30px;
+    top: 40px;
     font-family: 'K2D';
     font-style: normal;
     font-weight: 700;
@@ -76,7 +76,7 @@
     width: 110px;
     height: 40px;
     left: 975px;
-    top: 30px;
+    top: 40px;
     font-family: 'K2D';
     font-style: normal;
     font-weight: 700;
@@ -101,8 +101,8 @@
     position: absolute;
     width: 110px;
     height: 40px;
-    left: 1100px;
-    top: 30px;
+    left: 1105px;
+    top: 40px;
     font-family: 'K2D';
     font-style: normal;
     font-size: 20px;
@@ -205,14 +205,10 @@
 .leftarrow {
     position: absolute;
     box-sizing: border-box;
-    left: 0px;
-    top: 5px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 30px solid black;
-    margin: 1px auto 0;
+    left: 30px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
@@ -220,14 +216,10 @@
 .rightarrow {
     position: absolute;
     box-sizing: border-box;
-    left: 255px;
-    top: 5px;
-    width: 0;
-    height: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-left: 30px solid black;
-    margin: 1px auto 0;
+    left: 245px;
+    top: 25px;
+    width: 10px;
+    height: 10px;
     background: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
@@ -259,7 +251,7 @@
     position: absolute;
     width: 50px;
     height: 0px;
-    left: 195px;
+    left: 170px;
     top: 90px;
     border: 1px solid #000000;
     transform: rotate(90deg);
@@ -269,7 +261,7 @@
     position: absolute;
     width: 220px;
     height: 40px;
-    left: 285px;
+    left: 235px;
     top: 75px;
     box-shadow: 0 0 1px 1px silver;
     font-family: 'K2D';
@@ -285,11 +277,22 @@
 
 #my-calendar {
     position: absolute;
-    width: 160px;
+    text-align: center;
     height: 40px;
-    left: 1035px;
-    top: 75px;
-    box-shadow: 0 0 2px 2px silver;
+    left: 1065px;
+    top: 60px;
+    cursor: pointer;
+}
+
+.calendararrow {
+    position: absolute;
+    box-sizing: border-box;
+    left: 120px;
+    top: 20px;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 
 #form-calendar {
@@ -311,6 +314,16 @@
     left: 5px;
     top: 5px;
     background-color: white;
+}
+
+#day {
+    position: absolute;
+    width: 160px;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    background: #C4C4C4;
 }
 
 #footer {
