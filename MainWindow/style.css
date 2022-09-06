@@ -64,8 +64,7 @@ header{
         width:420px;
         min-width: 420px;
         height: 100px;
-        margin-left:auto;
-        margin-right:auto;
+        float:left;
         
     }
     #header-part-2 ul li {
@@ -76,22 +75,22 @@ header{
         line-height: 50px;
         margin-top:25px;
         margin-bottom:25px;
-    }
-    #header-part-2 ul li:nth-child(odd) {
         user-select: none;
         color: white;
         cursor: pointer;
         font-size: 22px;
         font-family: 'Roboto', sans-serif;
-
-
     }
+    
     #header-part-2 ul li hr{
         height:48px;
         margin-top:0px;
     }
 
-
+    .arrows-dropdownmenu{
+        transform: rotate(90deg);
+        padding-left:5px;
+    }
 
 #header-part-3{
     width:30%;

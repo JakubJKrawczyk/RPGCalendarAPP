@@ -17,6 +17,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.js"
+  integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+  crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -31,11 +35,9 @@
 
         <div class="header-part" id="header-part-2">
             <ul>
-                <li>log Out</li>
-                <li><hr></li>
-                <li>Groups</li>
-                <li><hr></li>
-                <li>My Events</li>
+
+                <li onclick="IncludeGroups()">Groups <img id="arrow-groups" class="arrows-dropdownmenu" src="./images/arrow.svg" width="15" height="15" > </li>
+                <li onclick="IncludeEvents()">My Events <img id="arrow-events" class="arrows-dropdownmenu" src="./images/arrow.svg" width="15" height="15" ></li>
                 
             </ul>
         </div >
@@ -54,18 +56,13 @@
     </header>
     
     <main id="content-container">
-        <?php
-            include "cos.html";
-        ?>
+        
     </main>
        
         <footer>
             <h3>"Group planner" / Autors: Jakub Krawczyk & Grzegorz Kramarz | 2022 &copy: All rights reserved!</h3>
         </footer>
-        <script
-        src="https://code.jquery.com/jquery-3.6.1.slim.js"
-        integrity="sha256-tXm+sa1uzsbFnbXt8GJqsgi2Tw+m4BLGDof6eUPjbtk="
-        crossorigin="anonymous"></script>
+        
         <script src="./script.js "></script>
 </body>
 
