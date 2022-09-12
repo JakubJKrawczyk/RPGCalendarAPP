@@ -8,6 +8,7 @@
     <meta name="keywords" content="rpg; gry; kalendarz; organizer; grupy" />
     <link rel=" stylesheet " href="./reset.css ">
     <link rel=" stylesheet " href="./style.css ">
+    <link href="./addons/hover.css" rel="stylesheet" media="all">
     <meta http-equiv="X-UA-Compatible " content="IE=edge,chrome=1 " />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,16 +18,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    
     <script
   src="https://code.jquery.com/jquery-3.6.1.js"
   integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
   crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onclick="OnMouseClick()">
 
-    <header>
-        
+    <header >
+
+
         <div class="header-gold-line" id="header-top-gold-line"></div>
 
         <div class="header-part" id="header-part-1">
@@ -34,18 +37,50 @@
         </div>
 
         <div class="header-part" id="header-part-2">
-            <ul>
+            
+            <ul id="header-part-2-list">
 
-                <li onclick="IncludeGroups()">Groups <img id="arrow-groups" class="arrows-dropdownmenu" src="./images/arrow.svg" width="15" height="15" > </li>
-                <li onclick="IncludeEvents()">My Events <img id="arrow-events" class="arrows-dropdownmenu" src="./images/arrow.svg" width="15" height="15" ></li>
-                
+                <li id="Groups-menu">
+                    <div onmouseover="ChangeMouseOver()" onmouseout="ChangeMouseOver()" class="hiddenMenuDiv" id="groupsHiddenMenuDiv">
+
+                        <span style="margin-top:-8px;" onclick="ShowGroupsMenu()"  class=" hvr-bounce-to-right">Groups</span><br/>
+                        <span onclick="IncludeMyGroups()" class=" hvr-bounce-to-left">My Groups</span><br/>
+                        <span onclick="IncludeAllGroups()" class="hvr-bounce-to-right">All Groups</span>
+
+                    </div>
+                </li>
+
+                <li id="Events-menu">
+                    
+                    <div onmouseover="ChangeMouseOver()" onmouseout="ChangeMouseOver()" class="hiddenMenuDiv" id="eventsHiddenMenuDiv">
+
+                        <span style="margin-top:-8px;" onclick="ShowEventsMenu()"  class=" hvr-bounce-to-right">Events</span><br/>
+                        <span onclick="IncludeMyEvents()" class=" hvr-bounce-to-left">My Events</span><br/>
+                        <span onclick="IncludeAllEvents()" class="hvr-bounce-to-right">All Events</span>
+
+                    </div>
+                    
+                </li>
+
+                <li id="Calendar-menu">
+                    
+                    <div onmouseover="ChangeMouseOver()" onmouseout="ChangeMouseOver()" class="hiddenMenuDiv" id="calendarHiddenMenuDiv">
+
+                        <span style="margin-top:-8px;" onclick="ShowCalendarsMenu()" class=" hvr-bounce-to-right">Calendar</span><br/>
+                        <span onclick="IncludeMyCalendar()" class="hvr-bounce-to-left">My Calendar</span><br/>
+                        <span onclick="IncludeGeneralCalendar()" class="hvr-bounce-to-right">General Calendars</span>
+
+                    </div>
+                    
             </ul>
-        </div >
+
+    
+        </div>
 
         <div class="header-part" id="header-part-3"> 
             <div id="avatar"></div>
             <div id="welcome-sign">
-                Welcome <a href="google.com">example</a>
+                Welcome <a onclick="IncludeMyAccount()">example</a>
                 
             </div>
             
@@ -53,6 +88,8 @@
 
         <div class="header-gold-line" id="header-bottom-gold-line"></div>
 
+
+      
     </header>
     
     <main id="content-container">
