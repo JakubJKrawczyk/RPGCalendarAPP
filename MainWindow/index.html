@@ -43,9 +43,9 @@
                 <li id="Groups-menu">
                     <div onmouseover="ChangeMouseOver()" onmouseout="ChangeMouseOver()" class="hiddenMenuDiv" id="groupsHiddenMenuDiv">
 
-                        <span style="margin-top:-8px;" onclick="ShowGroupsMenu()"  class=" hvr-bounce-to-right">Groups</span><br/>
-                        <span onclick="IncludeMyGroups()" class=" hvr-bounce-to-left">My Groups</span><br/>
-                        <span onclick="IncludeAllGroups()" class="hvr-bounce-to-right">All Groups</span>
+                        <span style="margin-top:-8px;" onclick="ShowHiddenMenu(document.getElementById('groupsHiddenMenuDiv'), this)"  class="main-menu-button hvr-radial-out">Groups</span><br/>
+                        <span onclick="IncludeMyGroups()" class=" hvr-bounce-to-left hidden-menu-option">My Groups</span><br/>
+                        <span onclick="IncludeAllGroups()" class="hvr-bounce-to-right hidden-menu-option">All Groups</span>
 
                     </div>
                 </li>
@@ -54,9 +54,9 @@
                     
                     <div onmouseover="ChangeMouseOver()" onmouseout="ChangeMouseOver()" class="hiddenMenuDiv" id="eventsHiddenMenuDiv">
 
-                        <span style="margin-top:-8px;" onclick="ShowEventsMenu()"  class=" hvr-bounce-to-right">Events</span><br/>
-                        <span onclick="IncludeMyEvents()" class=" hvr-bounce-to-left">My Events</span><br/>
-                        <span onclick="IncludeAllEvents()" class="hvr-bounce-to-right">All Events</span>
+                        <span style="margin-top:-8px;" onclick="ShowHiddenMenu(document.getElementById('eventsHiddenMenuDiv'), this)"  class="main-menu-button hvr-radial-out">Events</span><br/>
+                        <span onclick="IncludeMyEvents()" class=" hvr-bounce-to-left hidden-menu-option">My Events</span><br/>
+                        <span onclick="IncludeAllEvents()" class="hvr-bounce-to-right hidden-menu-option" >All Events</span>
 
                     </div>
                     
@@ -66,9 +66,9 @@
                     
                     <div onmouseover="ChangeMouseOver()" onmouseout="ChangeMouseOver()" class="hiddenMenuDiv" id="calendarHiddenMenuDiv">
 
-                        <span style="margin-top:-8px;" onclick="ShowCalendarsMenu()" class=" hvr-bounce-to-right">Calendar</span><br/>
-                        <span onclick="IncludeMyCalendar()" class="hvr-bounce-to-left">My Calendar</span><br/>
-                        <span onclick="IncludeGeneralCalendar()" class="hvr-bounce-to-right">General Calendars</span>
+                        <span style="margin-top:-8px;" onclick="ShowHiddenMenu(document.getElementById('calendarHiddenMenuDiv'), this)" class="main-menu-button hvr-radial-out">Calendar</span><br/>
+                        <span onclick="IncludeMyCalendar()" class="hvr-bounce-to-left hidden-menu-option" >My Calendar</span><br/>
+                        <span onclick="IncludeGeneralCalendar()" class="hvr-bounce-to-right hidden-menu-option" >General Calendars</span>
 
                     </div>
                     

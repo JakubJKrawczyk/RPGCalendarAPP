@@ -1441,7 +1441,7 @@
     transition-timing-function: ease-out;
   }
   .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
-    color: white;
+    color: white !important;
   }
   .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
     -webkit-transform: scaleX(1);
@@ -1484,7 +1484,7 @@
     transition-timing-function: ease-out;
   }
   .hvr-bounce-to-left:hover, .hvr-bounce-to-left:focus, .hvr-bounce-to-left:active {
-    color: white;
+    color: white !important;
   }
   .hvr-bounce-to-left:hover:before, .hvr-bounce-to-left:focus:before, .hvr-bounce-to-left:active:before {
     -webkit-transform: scaleX(1);
@@ -1588,7 +1588,7 @@
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative;
     overflow: hidden;
-    background: #e1e1e1;
+    background: #c70d6a;
     -webkit-transition-property: color;
     transition-property: color;
     -webkit-transition-duration: 0.3s;
@@ -1602,7 +1602,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: #2098D1;
+    background: #B30000;
     border-radius: 100%;
     -webkit-transform: scale(0);
     transform: scale(0);
