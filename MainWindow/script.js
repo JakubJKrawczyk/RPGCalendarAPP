@@ -36,28 +36,34 @@ function IncludeMyEvents(){
 
 // Menu Events section
 
-function ShowGroupsMenu(){
-    document.getElementById("groupsHiddenMenuDiv").style.height = "150px";
+
+
+function ShowHiddenMenu(sender, button){
+    let height = sender.style.height;
+    
+    if(height == "155px"){
+        sender.style.height = "47px";
+        // button.style.color = "#c70d6a";
+        
+    }else{
+        
+        sender.style.height = "157px";
+    //    button.style.color = "#2098D1";
+    }
 }
 
-function ShowEventsMenu(){
-    document.getElementById("eventsHiddenMenuDiv").style.height = "150px"; 
-}
-
-function ShowCalendarsMenu(){
-    document.getElementById("calendarHiddenMenuDiv").style.height = "150px";  
-}
 
 function OnMouseClick(){
     if(!isMouseOver){
-        document.getElementById("groupsHiddenMenuDiv").style.height = "48px";
-        document.getElementById("eventsHiddenMenuDiv").style.height = "48px"; 
-        document.getElementById("calendarHiddenMenuDiv").style.height = "48px";  
+        document.getElementById("groupsHiddenMenuDiv").style.height = "47px";
+        document.getElementById("eventsHiddenMenuDiv").style.height = "47px"; 
+        document.getElementById("calendarHiddenMenuDiv").style.height = "47px";   
 
-        
+        // let collection = document.getElementsByClassName("main-menu-button");
 
-        
-
+        // for(let i = 0; i<collection.length; i++){
+        //     collection[i].style.color = "#c70d6a";
+        // }
     }
     
 }
