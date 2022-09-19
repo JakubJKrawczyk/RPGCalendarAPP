@@ -1,0 +1,22 @@
+ body {
+     margin: 0 !important;
+ }
+ 
+ #container {
+     position: absolute;
+     width: 720px;
+     height: 1440px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+ }
+ 
+ #myaccount {
+     position: absolute;
+     width: 620px;
+     height: 590px;
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     box-shadow: 0 0 10px 10px gray padding: 50px;
+ }
